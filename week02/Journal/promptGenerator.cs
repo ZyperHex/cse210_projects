@@ -1,5 +1,6 @@
-public class promptGenerator
+public class promptGenerator   //The class has the same name of the cs file
 {
+    //creating a list 
     public List<string> _prompts = new List<string>()
     {
         "Who was the most interesting person I interacted with today?",
@@ -11,6 +12,7 @@ public class promptGenerator
         "What am I grateful for today?" 
     };
 
+    // this uses Random to pick one of the prompts above.
     public string GetRandomPrompt()
     {
         Random random = new Random();
