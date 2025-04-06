@@ -1,9 +1,13 @@
+
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
+        Progress progress = Progress.LoadFromFile("progress.json");
+        Menu menu = new Menu(progress);
+        menu.Run();
+        progress.SaveToFile("progress.json");
     }
 }
